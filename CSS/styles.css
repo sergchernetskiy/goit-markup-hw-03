@@ -1,0 +1,280 @@
+:root {
+   --primary-text-color: #212121;
+   --secondary-text-color: #757575;
+   --title-text-color: #000000;
+   --accent-text-color: #2196f3;
+   --main-background: #ffffff;
+   --contrast-text: #ffffff;
+   --secondary-background-one: #2f303a;
+   --secondary-background-two: #f5f4fa;
+}
+
+body {
+   background-color: var(--main-background);
+
+   color: var(--primary-text-color);
+   font-family: "Roboto", sans-serif;
+   font-weight: 500;
+   font-size: 14px;
+   line-height: 1.14;
+   letter-spacing: 0.03em;
+}
+
+/* Logo */
+.top-logo {
+   font-family: "Raleway", sans-serif;
+   font-weight: 700;
+   font-size: 26px;
+   line-height: 1.19;
+
+   color: var(--primary-text-color);
+
+   text-decoration: none;
+}
+
+.first-part-logo {
+   color: var(--accent-text-color);
+}
+
+.top-logo:hover,
+.top-logo:focus,
+.bottom-logo:hover,
+.bottom-logo:focus {
+   color: var(--accent-text-color);
+}
+
+.top-logo:focus-visible,
+.bottom-logo:focus-visible {
+   outline: 2px solid var(--accent-text-color);
+}
+
+/* Navigation + Contacts + Footer */
+.site-nav .link:hover,
+.site-nav .link:focus,
+.contacts .link:hover,
+.contacts .link:focus,
+.footer .link:hover,
+.footer .link:focus {
+   color: var(--accent-text-color);
+}
+
+.site-nav .link:focus-visible,
+.contacts .link:focus-visible,
+.footer .link:focus-visible {
+   outline: 2px solid var(--accent-text-color);
+}
+
+/* Navigation */
+.site-nav {
+   font-size: 14px;
+   line-height: 1.14;
+   letter-spacing: 0.02em;
+}
+
+.site-nav .link {
+   color: var(--primary-text-color);
+}
+
+.site-nav .link.current {
+   color: var(--accent-text-color);
+}
+
+.list {
+   list-style: none;
+}
+
+.link {
+   text-decoration: none;
+}
+
+/*Contacts*/
+.contacts .link {
+   color: var(--secondary-text-color);
+
+   font-size: 14px;
+   line-height: 1.14;
+   letter-spacing: 0.02em;
+}
+
+/* effective solutions */
+.hero {
+   background-color: var(--secondary-background-one);
+}
+.hero-title {
+   font-weight: 900;
+   font-size: 44px;
+   line-height: 1.36;
+   text-align: center;
+   letter-spacing: 0.06em;
+   text-transform: uppercase;
+
+   color: var(--contrast-text);
+}
+.button {
+   cursor: pointer;
+
+   background-color: var(--accent-text-color);
+   border: 2px solid var(--accent-text-color);
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+   border-radius: 4px;
+
+   font-family: inherit;
+   font-weight: 700;
+   font-size: 16px;
+   line-height: 1.88;
+   display: flex;
+   align-items: center;
+   text-align: center;
+   letter-spacing: 0.06em;
+
+   color: var(--contrast-text);
+}
+
+.button:hover,
+.button:focus {
+   background: #188ce8;
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+   border-radius: 4px;
+}
+
+.button:focus-visible {
+   outline: 1px solid #188ce8;
+}
+
+/* Our benefits */
+.benefits .benefits-hide-title {
+   width: 1px;
+   height: 1px;
+   overflow: hidden;
+   opacity: 0;
+   margin: -1px;
+}
+.title {
+   font-weight: 700;
+   font-size: 36px;
+   line-height: 1.17;
+   text-align: center;
+}
+.benefits-title {
+   font-weight: 700;
+   font-size: 14px;
+   line-height: 1.14;
+   text-transform: uppercase;
+}
+.benefits-text {
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 2;
+
+   color: var(--secondary-text-color);
+}
+
+/* Our team */
+.team {
+   background-color: var(--secondary-background-two);
+}
+
+.team-surname {
+   font-size: 16px;
+   line-height: 1.19;
+   text-align: center;
+}
+
+.team-specialty {
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 1.19;
+   text-align: center;
+
+   color: var(--secondary-text-color);
+}
+
+/* Footer */
+.footer {
+   background-color: var(--secondary-background-one);
+}
+
+.bottom-logo {
+   font-family: "Raleway", sans-serif;
+   font-weight: 700;
+   font-size: 26px;
+   line-height: 1.19;
+
+   color: var(--contrast-text);
+
+   text-decoration: none;
+}
+
+.adress {
+   font-weight: 400;
+   font-style: normal;
+   font-size: 14px;
+   line-height: 2;
+
+   color: var(--contrast-text);
+}
+
+.footer .link {
+   color: rgba(255, 255, 255, 0.6);
+
+   font-size: 14px;
+   line-height: 2;
+}
+
+/* Portfolio */
+.portfolio {
+   background-color: var(--main-background);
+}
+.portfolio-title {
+   font-size: 0;
+}
+
+/* Filter */
+.filter {
+   border-radius: 4px;
+   border: none;
+
+   font-family: inherit;
+   font-size: 16px;
+   line-height: 1.63;
+   text-align: center;
+}
+
+.filter.current {
+   background-color: var(--accent-text-color);
+   outline: var(--accent-text-color);
+   color: var(--contrast-text);
+}
+
+.filter:hover,
+.filter:focus {
+   background-color: var(--accent-text-color);
+   outline: var(--accent-text-color);
+   color: var(--contrast-text);
+}
+
+.filter:focus-visible {
+   outline: 1px solid #188ce8;
+}
+
+/* Gallery */
+.gallery-title {
+   font-weight: 700;
+   font-size: 18px;
+   line-height: 2;
+   letter-spacing: 0.06em;
+}
+
+.gallery-text {
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 1.88;
+
+   color: var(--secondary-text-color);
+}
+
+.main-list > .main-link {
+}
+
+.main .main-link {
+}
