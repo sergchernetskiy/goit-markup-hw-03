@@ -9,6 +9,27 @@
    --secondary-background-two: #f5f4fa;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+   margin: 0;
+}
+
+ul {
+   margin: 0;
+   padding-left: 0;
+}
+
+.header {
+   border-bottom-width: 1px;
+   border-bottom-style: solid;
+   border-bottom-color: #ececec;
+}
+
 body {
    background-color: var(--main-background);
 
@@ -18,6 +39,14 @@ body {
    font-size: 14px;
    line-height: 1.14;
    letter-spacing: 0.03em;
+}
+
+.container {
+   width: 1200px;
+   margin: 0 auto;
+   padding-left: 15px;
+   padding-right: 15px;
+   outline: 1px solid red;
 }
 
 /* Logo */
@@ -99,6 +128,8 @@ body {
 /* effective solutions */
 .hero {
    background-color: var(--secondary-background-one);
+
+   height: 600px;
 }
 .hero-title {
    font-weight: 900;
@@ -109,6 +140,11 @@ body {
    text-transform: uppercase;
 
    color: var(--contrast-text);
+
+   max-width: 696px;
+   margin: 0 auto;
+   margin-bottom: 30px;
+   padding-top: 200px;
 }
 .button {
    cursor: pointer;
@@ -128,6 +164,7 @@ body {
    letter-spacing: 0.06em;
 
    color: var(--contrast-text);
+   margin: 0 auto;
 }
 
 .button:hover,
