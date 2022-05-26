@@ -24,12 +24,6 @@ ul {
    padding-left: 0;
 }
 
-.header {
-   border-bottom-width: 1px;
-   border-bottom-style: solid;
-   border-bottom-color: #ececec;
-}
-
 body {
    background-color: var(--main-background);
 
@@ -39,6 +33,22 @@ body {
    font-size: 14px;
    line-height: 1.14;
    letter-spacing: 0.03em;
+}
+
+.header {
+   border-bottom-width: 1px;
+   border-bottom-style: solid;
+   border-bottom-color: #ececec;
+}
+
+.header-menu {
+   display: flex;
+   align-items: center;
+}
+
+.header .container {
+   display: flex;
+   align-items: center;
 }
 
 .container {
@@ -59,6 +69,8 @@ body {
    color: var(--primary-text-color);
 
    text-decoration: none;
+
+   margin-right: 93px;
 }
 
 .first-part-logo {
@@ -98,6 +110,8 @@ body {
    font-size: 14px;
    line-height: 1.14;
    letter-spacing: 0.02em;
+
+   display: flex;
 }
 
 .site-nav .link {
@@ -106,6 +120,10 @@ body {
 
 .site-nav .link.current {
    color: var(--accent-text-color);
+}
+
+.site-nav-item:not(:last-child) {
+   margin-right: 40px;
 }
 
 .list {
@@ -117,6 +135,11 @@ body {
 }
 
 /*Contacts*/
+.contacts {
+   display: flex;
+   margin-left: auto;
+}
+
 .contacts .link {
    color: var(--secondary-text-color);
 
@@ -125,11 +148,20 @@ body {
    letter-spacing: 0.02em;
 }
 
+.contacts-item:not(:last-child) {
+   margin-right: 50px;
+}
+
 /* effective solutions */
 .hero {
    background-color: var(--secondary-background-one);
 
-   height: 600px;
+   padding-top: 200px;
+   padding-bottom: 200px;
+}
+
+.hero-container {
+   padding-bottom: 280px;
 }
 .hero-title {
    font-weight: 900;
@@ -144,7 +176,6 @@ body {
    max-width: 696px;
    margin: 0 auto;
    margin-bottom: 30px;
-   padding-top: 200px;
 }
 .button {
    cursor: pointer;
@@ -179,6 +210,12 @@ body {
 }
 
 /* Our benefits */
+.benefits {
+   padding-top: 94px;
+   padding-bottom: 94px;
+   background-color: goldenrod;
+}
+
 .benefits .benefits-hide-title {
    width: 1px;
    height: 1px;
@@ -198,6 +235,17 @@ body {
    line-height: 1.14;
    text-transform: uppercase;
 }
+
+.benefits .list {
+   display: flex;
+   margin-left: -30px;
+}
+
+.benefits-item {
+   width: 270px;
+   margin-left: 30px;
+}
+
 .benefits-text {
    font-weight: 400;
    font-size: 14px;
