@@ -185,6 +185,9 @@ body {
    border: 2px solid var(--accent-text-color);
    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
    border-radius: 4px;
+   color: var(--contrast-text);
+   margin: 0 auto;
+   padding: 10px 32px;
 
    font-family: inherit;
    font-weight: 700;
@@ -194,9 +197,6 @@ body {
    align-items: center;
    text-align: center;
    letter-spacing: 0.06em;
-
-   color: var(--contrast-text);
-   margin: 0 auto;
 }
 
 .button:hover,
@@ -235,6 +235,8 @@ body {
    font-size: 14px;
    line-height: 1.14;
    text-transform: uppercase;
+
+   margin-bottom: 10px;
 }
 
 .benefits .list {
@@ -266,21 +268,51 @@ body {
 
 .activity .list {
    display: flex;
+   margin: -15px;
 }
 
-.activity-item:not(:last-child) {
-   margin-right: 30px;
+.activity-item {
+   margin: 15px;
+}
+
+img {
+   display: block;
 }
 
 /* Our team */
 .team {
    background-color: var(--secondary-background-two);
+
+   padding-top: var(--typical-padding-ident);
+   padding-bottom: var(--typical-padding-ident);
+}
+
+.team .title {
+   margin-bottom: 50px;
+}
+
+.team .list {
+   display: flex;
+}
+
+.team-item {
+   margin-bottom: 30px;
+}
+
+.team-item:not(:last-child) {
+   margin-right: 30px;
+}
+
+.identification {
+   margin-top: 30px;
 }
 
 .team-surname {
    font-size: 16px;
    line-height: 1.19;
    text-align: center;
+
+   margin-bottom: 10px;
 }
 
 .team-specialty {
@@ -295,6 +327,9 @@ body {
 /* Footer */
 .footer {
    background-color: var(--secondary-background-one);
+
+   padding-top: 60px;
+   padding-bottom: 60px;
 }
 
 .bottom-logo {
@@ -302,10 +337,12 @@ body {
    font-weight: 700;
    font-size: 26px;
    line-height: 1.19;
-
    color: var(--contrast-text);
 
    text-decoration: none;
+
+   display: inline-block;
+   margin-bottom: 20px;
 }
 
 .adress {
@@ -313,29 +350,51 @@ body {
    font-style: normal;
    font-size: 14px;
    line-height: 2;
-
    color: var(--contrast-text);
+
+   margin-bottom: 9px;
 }
 
 .footer .link {
-   color: rgba(255, 255, 255, 0.6);
-
    font-size: 14px;
    line-height: 2;
+   color: rgba(255, 255, 255, 0.6);
+}
+
+.footer .mail {
+   display: inline-block;
+   margin-bottom: 9px;
 }
 
 /* Portfolio */
 .portfolio {
    background-color: var(--main-background);
+
+   padding-top: var(--typical-padding-ident);
+   padding-bottom: var(--typical-padding-ident);
 }
 .portfolio-title {
-   font-size: 0;
+   width: 1px;
+   height: 1px;
+   overflow: hidden;
+   opacity: 0;
+   margin: -1px;
 }
 
 /* Filter */
+.gallery {
+   display: flex;
+   margin-bottom: 50px;
+}
+
+.gallery-item:not(:last-child) {
+   margin-right: 8px;
+}
 .filter {
    border-radius: 4px;
    border: none;
+   padding: 6px 22px;
+   margin: 0 auto;
 
    font-family: inherit;
    font-size: 16px;
@@ -361,11 +420,38 @@ body {
 }
 
 /* Gallery */
+.gallery-list {
+   display: flex;
+   flex-wrap: wrap;
+   margin: -15px;
+}
+
+.gallery-list-item {
+   width: 370px;
+   margin: 15px;
+}
+
+.caption {
+   max-width: 370px;
+
+   border-right-width: 1px;
+   border-right-style: solid;
+   border-right-color: #eeeeee;
+   border-bottom-width: 1px;
+   border-bottom-style: solid;
+   border-bottom-color: #eeeeee;
+   border-left-width: 1px;
+   border-left-style: solid;
+   border-left-color: #eeeeee;
+}
+
 .gallery-title {
    font-weight: 700;
    font-size: 18px;
    line-height: 2;
    letter-spacing: 0.06em;
+   margin: 0px 24px 4px 24px;
+   padding-top: 20px;
 }
 
 .gallery-text {
@@ -374,10 +460,6 @@ body {
    line-height: 1.88;
 
    color: var(--secondary-text-color);
-}
 
-.main-list > .main-link {
-}
-
-.main .main-link {
+   margin-left: 20px;
 }
