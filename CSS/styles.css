@@ -7,6 +7,7 @@
    --contrast-text: #ffffff;
    --secondary-background-one: #2f303a;
    --secondary-background-two: #f5f4fa;
+   --typical-padding-ident: 94px;
 }
 
 h1,
@@ -211,8 +212,8 @@ body {
 
 /* Our benefits */
 .benefits {
-   padding-top: 94px;
-   padding-bottom: 94px;
+   padding-top: var(--typical-padding-ident);
+   padding-bottom: var(--typical-padding-ident);
    background-color: goldenrod;
 }
 
@@ -252,6 +253,23 @@ body {
    line-height: 2;
 
    color: var(--secondary-text-color);
+}
+/* What we do */
+.activity {
+   padding-bottom: var(--typical-padding-ident);
+   background-color: teal;
+}
+
+.activity .title {
+   margin-bottom: 50px;
+}
+
+.activity .list {
+   display: flex;
+}
+
+.activity-item:not(:last-child) {
+   margin-right: 30px;
 }
 
 /* Our team */
