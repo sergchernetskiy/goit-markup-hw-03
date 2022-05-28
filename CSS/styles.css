@@ -163,10 +163,6 @@ body {
    background-color: var(--secondary-background-one);
 }
 
-.hero-container {
-   padding-bottom: 280px;
-}
-
 .hero-title {
    max-width: 696px;
    margin: 0 auto;
