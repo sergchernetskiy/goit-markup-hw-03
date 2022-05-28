@@ -38,6 +38,8 @@ body {
 
 /* ----------header---------- */
 .header {
+   padding-top: 24px;
+   padding-bottom: 25px;
    border-bottom-width: 1px;
    border-bottom-style: solid;
    border-bottom-color: #ececec;
@@ -388,7 +390,7 @@ img {
 /* ----------Filter---------- */
 .gallery {
    display: flex;
-   margin-bottom: 35px;
+   margin-bottom: 50px;
    justify-content: center;
 }
 
@@ -429,7 +431,7 @@ img {
 .gallery-list {
    display: flex;
    flex-wrap: wrap;
-   /*margin: -15px;*/
+   margin: -15px;
 }
 
 .gallery-list-item {
